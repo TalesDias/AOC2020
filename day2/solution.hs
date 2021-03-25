@@ -41,7 +41,7 @@ main = do
   hClose handle
 
 
-number :: GenParser Char setsonot Int
+number :: GenParser Char st Int
 number = do 
   n <- many1 digit
   return (read n ::Int) <?> "Expecting number"
