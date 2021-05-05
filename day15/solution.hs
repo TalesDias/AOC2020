@@ -66,7 +66,15 @@ playUntil2020 (x:xs) n =
 -- Also, sorry for the similar names, this is just an experiment
 
 
---time: +10h
+{-time: 
+real	1669m38.817s
+user	880m47.638s
+sys	2m21.547s
+
+Note: the code did not finished excecuting
+i got bored after more than 1 day waiting
+-}
+
 playUntil30MSimple:: [Int] -> Int -> Int
 playUntil30MSimple (x:xs) 30000000 = x
 playUntil30MSimple (x:xs) n = 
